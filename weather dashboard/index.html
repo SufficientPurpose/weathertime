@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center">
+        <strong>Weather Dashboard</strong>
+        </h1>
+    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 bg-light">
+
+            <p class="search-header">Search by city</p>
+            <div class="input-group ">
+                <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
+                <div class="input-group-append"></div>
+                    <button class="btn btn-primary" type="button" id="go" class="search">go</button>
+            </div>
+        <button class="btn btn-primary" type="button" id="clear-Button">clear history</button>
+        <div id="history" class="history-list"></div>
+    </div>
+    <div class="col-lg-8">
+        <div class="row">
+            <div class="col-lg-12 border border-dark">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span id="city-name" class="city-name"></span>
+                        <img id="currentImg" src="" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p id="temperature"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p id="humidity"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p id="windSpeed"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p id="UV-index"></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>5-Day Forecast</h3>
+                    <div id="forecast-cards">
+                        <div class="card forecast">
+                            <div id="forecast1" class="card-body">
+                                <span class="card-title" id='date1'>
+                                </span>
+                                <img id='currentImg1'></img>
+                                <p class="card-text" id="temperature1"></p>
+                                <p class="card-text" id="humidity1"></p>
+                            </div>
+                        </div>
+                        <div class="card forecast">
+                            <div id="forecast2" class="card-body">
+                                <span class="card-title" id='date2'>
+                                </span>
+                                <img id='currentImg2'></img>
+                                <p class="card-text" id="temperature2"></p>
+                                <p class="card-text" id="humidity2"></p>
+                            </div>
+                        </div>
+                        <div class="card forecast">
+                            <div id="forecast3" class="card-body">
+                                <span class="card-title" id='date3'>
+                                </span>
+                                <img id='currentImg3'></img>
+                                <p class="card-text" id="temperature3"></p>
+                                <p class="card-text" id="humidity3"></p>
+                            </div>
+                        </div>
+                        <div class="card forecast">
+                            <div id="forecast4" class="card-body">
+                                <span class="card-title" id='date4'>
+                                </span>
+                                <img id='currentImg4'></img>
+                                <p class="card-text" id="temperature4"></p>
+                                <p class="card-text" id="humidity4"></p>
+                            </div>
+                        </div>
+                        <div class="card forecast">
+                            <div id="forecast5" class="card-body">
+                                <span class="card-title" id='date5'>
+                                </span>
+                                <img id='currentImg5'></img>
+                                <p class="card-text" id="temperature5"></p>
+                                <p class="card-text" id="humidity5"></p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="weather.js"></script>
+
+</body>
+</html>
